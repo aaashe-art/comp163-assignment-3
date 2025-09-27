@@ -74,3 +74,50 @@ if user_choice in study_options:
 
 elif user_choice not in study_options:
     print(f"{user_choice} is not a valid study option. Please choose from: {study_options}")
+
+# FINAL CHOICE SECTION
+print("\nFINAL CHOICE! Time to decide how you spend your weekend.")
+print("You can either:")
+print("1) Relax and recharge")
+print("2) Party with friends")
+print("3) Study extra for next week")
+
+final_choice = input("Enter 1, 2, or 3: ")
+
+# Use identity operators to check the choice and adjust stats
+if final_choice == "1":  # Relaxing
+    stress_level -= 15
+    social_points += 5
+    study_hours += 5
+elif final_choice == "2":  # Partying
+    stress_level += 5
+    social_points += 15
+    study_hours -= 2
+elif final_choice == "3":  # Extra studying
+    stress_level += 10
+    study_hours -= 5
+    current_gpa += 0.2
+else:
+    print("Invalid choice! No changes made.")
+
+# ENDING DETERMINATION
+print("\nCalculating your final outcome...\n")
+
+# Use comparisons and logical operators to decide ending
+if current_gpa >= 3.8 and social_points >= 70 and stress_level <= 30:
+    ending = "Super Healthy"
+elif current_gpa >= 3.5 and social_points >= 60 and stress_level <= 40:
+    ending = "Healthy"
+elif current_gpa >= 3.0 and social_points >= 50 and stress_level <= 50:
+    ending = "Regular"
+elif current_gpa < 3.0 and (social_points < 50 or stress_level > 50):
+    ending = "Bad"
+else:
+    ending = "Super Bad"
+
+# FINAL STATS OUTPUT
+print(f"Final GPA: {current_gpa:.2f}")
+print(f"Final Study Hours: {study_hours}")
+print(f"Final Social Points: {social_points}")
+print(f"Final Stress Level: {stress_level}")
+print(f"Your ending: {ending}")
