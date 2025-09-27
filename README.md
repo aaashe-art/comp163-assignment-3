@@ -1,1 +1,3 @@
 # comp163-assignment-3
+
+# This is my Student Life Simulator, The concept of this sim is that you want to try and get the highest gpa/ social points with the lowest stress levels and lowest study hours. There are 5 endings that are possible, ranging from super healthy to super bad. If I had more time and a bigger team, I would have liked to make it closer to bitlyfe, where random occurrences could pop up to farther change the stats. My code is split into three decisions that all affect stress levels, social points, and GPA. Depending on the user's choice, it will change the initial stats the student put in.
