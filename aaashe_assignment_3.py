@@ -101,7 +101,7 @@ else:
     print("Invalid choice! No changes made.")
 
 # ENDING DETERMINATION
-print("\nCalculating your final outcome...\n")
+print("Calculating your final outcome...")
 
 # Use comparisons and logical operators to decide ending
 if current_gpa >= 3.8 and social_points >= 70 and stress_level <= 30:
